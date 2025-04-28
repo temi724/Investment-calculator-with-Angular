@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-interface',
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './interface.component.html',
-  styleUrl: './interface.component.css'
+  styleUrl: './interface.component.css',
 })
 export class InterfaceComponent {
-
+  initialInvestment: number = 0;
+  annualInvestment: number = 0;
 }
